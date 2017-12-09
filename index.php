@@ -9,3 +9,9 @@
 require_once "config.php";
 
 include "site/head.php";
+
+if ($_POST) {
+    include "save.php";
+} else {
+    include "form.php";
+}
